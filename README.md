@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Logo da Petflix" title="Petflix" src="./img/pawRed.png"/>
+  <img alt="Logo da Petflix" title="Petflix" src="./img/pawIcon.png"/>
   PETFLIX
 </h1>
 
@@ -16,7 +16,12 @@
 
 - Para ler os códigos fonte, basta acessá-los diretamente nesse repositório.     
 
-- Para ir para a Petflix, clique na imagem abaixo com o *scroll* ou com o botão direito do mouse para abrir em nova aba:
+- Para acessar a page, clique na imagem abaixo com o *scroll* ou com o botão direito do mouse para abrir em nova aba:
+
+
+<a href="https://debhvalois.github.io/desafioDioCloneNetflix22/" alt="Petflix" target="_blank">
+<img src="img/imgReadme.jpeg"/>
+</a>
 
 
 ## :hammer_and_wrench: Tecnologias Utilizadas:
@@ -29,7 +34,7 @@
 
 - *jQuery* & *Bootstrap* : frameworks javaScript e CSS.
 
-- *FlexBox* & *OwlCarousel* : plugins para manipulação de elementos;
+- *FlexBox* & *OwlCarousel* : plugins para manipulação de elementos.
 
 - *Git* & *GitHub* : deployer e repositório.
 
