@@ -19,7 +19,7 @@
 - Para acessar a page, clique na imagem abaixo com o *scroll* ou com o botão direito do mouse para abrir em nova aba:
 
 
-<a href="https://debhvalois.github.io/desafioDioCloneNetflix22/" alt="Petflix" target="_blank">
+<a href="https://debhvalois.github.io/desafioDioCloneNetflix/" alt="Petflix" target="_blank">
 <img src="img/imgReadme.jpeg"/>
 </a>
 
