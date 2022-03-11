@@ -1,0 +1,54 @@
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
+
+/* ******* MEDIA QUERIES BUSCAR REFERENCIAS *******
+= DEIXAR RESPONSIVA PARA VARIOS TAMANHOS DE TELAS */
+
+/* QUANDO A TELA TIVER TANTOS 1024 PX - TIPO NOTEBOOK */
+@media (max-width: 1024px) { 
+
+    /* MEU CONTEÚDO DEVERÁ OCUPAR 90% DA TELA*/
+    .container {
+        width: 100%;
+    }
+} 
+
+/* QUANDO A TELA TIVER 462 PX - TIPO CELULAR  */
+@media (max-width: 462px) {
+
+    .container {
+        width: 90%;
+    }
+ 
+    /* BTN INFO desabilitado*/
+    .botao2 {
+        display: none;
+    }
+
+    /* BTN ASSISTIR vai pro centro */
+    .botao1 {
+        padding: 5px 40px;
+        margin-left: 50%;
+    }
+
+    /* DESCRICAO desabilitado */
+    .filme-principal .descricao{
+        display: none;
+    }
+}
