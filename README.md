@@ -9,7 +9,7 @@
 
 ### Descrição
 
-- [x] Recriar e reconceitualizar uma das interfaces interativas da Netflix com responsividade.
+- [x] Recriar e reconceitualizar a página principal da Netflix com responsividade.
 
 
 ## 📁 Acessibilidade:
