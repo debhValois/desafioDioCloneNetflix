@@ -1,31 +1,26 @@
 /* Desafio DIO | HTML Web Developer | Layout Petflix | Debh Valois | 11/03/2022 */
-
 :root{
     --vermelho:#E50914;
     --preta:#141414;
 }
-
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
 /*elementos base*/
 body{
    background: var(--preta);
    font-family: 'Netflix Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
    color: whitesmoke;
 }
-
 /* CONTAINER INTEIRO DA PARTE SUPERIOR */
 .container{
     margin-left: 20px;
     margin-top: 0px; 
 }
-
 /* NAVBAR - SUP */
-header .container{
+header .container-fluid{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +30,6 @@ header .container{
     margin-right: 0px; 
     height: 68px;
 }
-
 /* PETFLIX */
 .logo{
     display:flex;
@@ -46,12 +40,9 @@ header .container{
     font-family: 'Bebas Neue';
     font-size:23px;
 }
-
 .paw {
-    width: 6%;
     padding-right: 5px;
 }
-
 /* BTNS NAV BAR SUP */
 header nav a{
     text-decoration:none;
@@ -61,21 +52,17 @@ header nav a{
     font-family: inherit;
     margin-right: 14px;
 }
-
 header nav a:hover{
     color:#e5e5e5a8;
     cursor: url(http://www.zingerbugimages.com/cursors/pink_paws.ani), url(http://www.zingerbug.com/cursors/cursors/pink_paws.gif), progress !important;
 }
-
 /* ******* FILME PRINCIPAL ******* */
-
 /* BANNER */
 .imagemFilmePrincipal {
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/filmePrincipal.jpg');
     background-size: cover;
     max-height: 460px; /* Alterar Sempre Que Mudar Imagem de Fundo  */
 }
-
 /* TÍTULO E SINÓPSE */
 .filme-principal .container{
     width: 70%; 
@@ -86,7 +73,6 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
 }
-
 /*FUNDO FILME PRINCIPAL*/
 .filme-principal{
     font-size:16px;
@@ -95,25 +81,24 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
 }
-
 .filme-principal .titulo{
     margin-top: 5%;
-    max-width: 18%;
+    height: 85px;  
 }
-
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 /* BTNS ASSISTIR + INFOS */
-
 /* ICONES DOS BTNS */
-.botao i{
+.fa-play i{
     margin-right: 8px; 
-    color: black
+    color: black;
 }
-
+.fa-info-circle i{
+    margin-right: 8px; 
+    color: whitesmoke;
+}
 /* BTN ASSISTIR */
 .botao1{
     background-color: whitesmoke;
@@ -130,7 +115,6 @@ header nav a:hover{
     background-color: rgba(245, 245, 245, 0.7);
     cursor: url(http://www.zingerbugimages.com/cursors/pink_paws.ani), url(http://www.zingerbug.com/cursors/cursors/pink_paws.gif), progress !important;
 }
-
 /* BTN INFO */
 .botao2{
     background-color: rgba(109, 109, 110, 0.7);
@@ -143,19 +127,15 @@ header nav a:hover{
     border-radius: 5px;
     color: whitesmoke;
 }
-
 .botao2:hover{
     background-color: rgba(109, 109, 110, 0.4);
     cursor: url(http://www.zingerbugimages.com/cursors/pink_paws.ani), url(http://www.zingerbug.com/cursors/cursors/pink_paws.gif), progress !important;
 }
-
 /* ******* CARROSSEL ******* */
-
 /* ALTURA DO CARROSSEL EM RELAÇÃO A IMAGEM DE FUNDO */
 .carrosel-filmes{
     margin-top: -60px;
 }
-
 .box-filme{
     max-height: 240px;
     max-width: 140px;
@@ -163,52 +143,45 @@ header nav a:hover{
     /* pawPink - patinha rosa navegar no carrossel */
     cursor: url(http://www.zingerbugimages.com/cursors/pink_paws.ani), url(http://www.zingerbug.com/cursors/cursors/pink_paws.gif), progress !important;
 }
-
 /* ******* MEDIA QUERIES BUSCAR REFERENCIAS *******
 = DEIXAR RESPONSIVA PARA VARIOS TAMANHOS DE TELAS */
-
 /* QUANDO A TELA GRANDE */
 @media (max-width: 1024px) { 
-
     /* MEU CONTEÚDO DEVERÁ OCUPAR 100% DA TELA*/
     .container {
         width: 100%;
     }
 } 
-
 /* QUANDO A TELA TIVER ATÉ 462 PX */
-@media (max-width: 462px) {
-
-    .container {
+@media (max-width: 440px) {
+    .container{
         width: 90%;
+        margin-left: 5px;
+        padding-bottom: 25px;
     }
- 
+    .botoes{
+        padding-top: 10px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .botao1{
+        font-size: 10px; 
+        padding: 0px 0px;
+        margin-right: 0px; 
+        margin-left: 0px; 
+    }
     /* BTN INFO desabilitado*/
-    .botao2 {
+    .botao2{
         display: none;
-    }
-
-    /* BTN ASSISTIR vai pro centro */
-    .botao1 {
-        padding: 5px 40px;
-        margin-left: 50%;
-    }
-    .logo {
-        margin-left: 50%;
     }
     /* DESCRICAO desabilitado */
-    .filme-principal .descricao {
+    .filme-principal .descricao{
         display: none;
     }
-    
-    /* DEGRADÊ DO NAV BAR desabilitado */
-    header .container {
-        background: none;
-        width: 100%;    
-    }
-
-    /* PATINHA VERMELHA desabilitado */
-    .paw {
-        display: none;
+    .logo{
+        margin-left: 5px;
+        font-size: 17px;
+        padding-bottom: 10px;
     }
 }
+/* ULTIMA ATUALIZAÇÃO EM: 12/03/2022 */
